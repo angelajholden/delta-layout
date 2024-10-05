@@ -1,0 +1,13 @@
+.header {
+	padding: 1rem 0;
+	background-color: $black;
+	color: $white;
+}
+
+.icon {
+	.header & {
+		padding: 14px;
+		border: none;
+		background: transparent;
+	}
+}
