@@ -15,6 +15,7 @@ body {
 	font-size: 100%;
 	font-weight: 400;
 	font-style: normal;
+	letter-spacing: 0.5px;
 	line-height: 1.65;
 	color: $black;
 	background-color: $lt-gray;
@@ -55,4 +56,17 @@ button {
 	flex-flow: row wrap;
 	justify-content: space-between;
 	align-items: flex-start;
+}
+
+.primary-header {
+	flex: 0 0 100%;
+	font-size: 3rem;
+	font-weight: 300;
+	margin: 0 0 2rem;
+	text-align: center;
+}
+
+.secondary-header {
+	font-weight: 400;
+	margin: 0.75rem 0;
 }
