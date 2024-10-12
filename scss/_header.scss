@@ -1,4 +1,5 @@
 .header {
+	position: relative;
 	padding: 1rem 0;
 	background-color: $black;
 	color: $white;
@@ -9,5 +10,171 @@
 		padding: 14px;
 		border: none;
 		background: transparent;
+	}
+}
+
+.search-drawer {
+	position: fixed;
+	right: -100%;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: $black;
+	color: $white;
+	transition: right 300ms ease-in-out;
+
+	&.active {
+		right: 0;
+	}
+}
+
+.inner-wrap {
+	.search-drawer & {
+		align-items: center;
+		height: 100%;
+	}
+}
+
+.input-container {
+	.search-drawer & {
+		position: relative;
+		width: 100%;
+	}
+}
+
+.search-input {
+	.search-drawer & {
+		appearance: none;
+		width: 100%;
+		padding: 1rem 0.5rem;
+		font-size: 2rem;
+		background-color: $black;
+		border: none;
+		border-bottom: 1px solid $white;
+
+		&::placeholder {
+			color: $white;
+			letter-spacing: 1px;
+		}
+	}
+}
+
+.icon-button {
+	appearance: none;
+	background: none;
+	border: none;
+}
+
+.search-button {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 70px;
+	height: 100%;
+
+	.ionicon {
+		display: block;
+		width: 65%;
+		height: auto;
+		margin: 0 auto;
+	}
+}
+
+.search-close {
+	.search-drawer & {
+		position: absolute;
+		top: 1rem;
+		right: 2rem;
+		width: 50px;
+		height: 50px;
+		z-index: 3;
+
+		.ionicon {
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+	}
+}
+
+.navigation-drawer {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+	position: fixed;
+	top: 0;
+	right: -100%;
+	width: 550px;
+	max-width: 100%;
+	height: 100vh;
+	background-color: $black;
+	color: $white;
+	transition: right 400ms ease-in-out;
+
+	&.active {
+		right: 0;
+	}
+}
+
+.nav-header {
+	.navigation-drawer & {
+		flex: 0 0 auto;
+		// font-size: 2rem;
+		font-size: clamp(2rem, 3vw, 2.5rem);
+		padding: 2rem 0;
+		margin: 0 2rem;
+		border-bottom: 1px solid #555;
+	}
+}
+
+.menu-items {
+	.navigation-drawer & {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		text-align: center;
+
+		a {
+			display: block;
+			font-size: clamp(1rem, 1.25vw, 1.25rem);
+			color: $white;
+			text-decoration: none;
+			padding: 1rem;
+		}
+	}
+}
+
+.social-icons {
+	padding: 2rem 0;
+	margin: 0 2rem;
+	border-top: 1px solid #555;
+}
+
+.social-items {
+	.navigation-drawer & {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		text-align: center;
+
+		li {
+			display: inline-block;
+			margin: 0 0.5rem;
+		}
+
+		a {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 48px;
+			height: 48px;
+		}
+
+		svg {
+			display: block;
+			width: 50%;
+			height: auto;
+			fill: $white;
+		}
 	}
 }
