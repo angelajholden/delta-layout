@@ -22,6 +22,7 @@
 	background-color: $black;
 	color: $white;
 	transition: right 300ms ease-in-out;
+	z-index: 3;
 
 	&.active {
 		right: 0;
@@ -80,21 +81,24 @@
 	}
 }
 
-.search-close {
-	.search-drawer & {
-		position: absolute;
-		top: 1rem;
-		right: 2rem;
-		width: 50px;
-		height: 50px;
-		z-index: 3;
+.drawer-close {
+	display: none;
+	position: absolute;
+	top: 1rem;
+	right: 2rem;
+	width: 50px;
+	height: 50px;
+	z-index: 3;
 
-		.ionicon {
-			display: block;
-			width: 100%;
-			height: auto;
-		}
+	.ionicon {
+		display: block;
+		width: 100%;
+		height: auto;
 	}
+}
+
+.active .drawer-close {
+	display: block;
 }
 
 .navigation-drawer {
@@ -109,7 +113,8 @@
 	height: 100vh;
 	background-color: $black;
 	color: $white;
-	transition: right 400ms ease-in-out;
+	transition: right 200ms ease-in-out;
+	z-index: 2;
 
 	&.active {
 		right: 0;
