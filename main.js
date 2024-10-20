@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
 	// Get elements
-	const searchButton = document.querySelector(".menu-items .icon:nth-child(1)"); // Search button
-	const menuButton = document.querySelector(".menu-items .icon:nth-child(3)"); // Menu button
+	const searchButton = document.querySelector(".search-open"); // Search button
+	const menuButton = document.querySelector(".menu-open"); // Menu button
 	const searchDrawer = document.querySelector(".search-drawer");
 	const navigationDrawer = document.querySelector(".navigation-drawer");
 	const searchCloseButton = searchDrawer.querySelector(".drawer-close"); // Search close button
