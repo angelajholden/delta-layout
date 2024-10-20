@@ -14,6 +14,7 @@
 }
 
 .search-drawer {
+	visibility: hidden;
 	position: fixed;
 	right: -100%;
 	top: 0;
@@ -25,6 +26,7 @@
 	z-index: 3;
 
 	&.active {
+		visibility: visible;
 		right: 0;
 	}
 }
@@ -97,6 +99,7 @@
 }
 
 .navigation-drawer {
+	visibility: hidden;
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: space-between;
@@ -112,6 +115,7 @@
 	z-index: 2;
 
 	&.active {
+		visibility: visible;
 		right: 0;
 	}
 }

@@ -95,77 +95,78 @@
 		<main class="main">
 			<div class="inner-wrap">
 				<h1 class="primary-header">Angela J Holden</h1>
-				<div class="button-container">
-					<button class="button-sort active">All</button>
-					<button class="button-sort">Lifestyle</button>
-					<button class="button-sort">Inspiration</button>
-					<button class="button-sort">Travel</button>
-					<button class="button-sort">Ideas</button>
-					<button class="button-sort">Design</button>
+				<div class="button-container filters">
+					<button data-filter="*" class="button-sort active">All</button>
+					<button data-filter=".lifestyle" class="button-sort">Lifestyle</button>
+					<button data-filter=".inspiration" class="button-sort">Inspiration</button>
+					<button data-filter=".travel" class="button-sort">Travel</button>
+					<button data-filter=".ideas" class="button-sort">Ideas</button>
+					<button data-filter=".design" class="button-sort">Design</button>
 				</div>
 				<section class="grid">
-					<article class="grid-item">
+					<div class="grid-sizer"></div>
+					<article class="grid-item lifestyle inspiration">
 						<figure class="item-image">
 							<img src="https://picsum.photos/300/200" alt="" />
 						</figure>
 						<div class="item-copy">
 							<h2 class="secondary-header">Start Creating Today</h2>
-							<div class="item-categories">Creative</div>
+							<div class="item-categories">Lifestyle, Inspiration</div>
 							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni asperiores atque numquam, similique rerum dignissimos unde culpa nemo impedit itaque iste, tempore ut eligendi, temporibus illo delectus voluptas aperiam. Iste.</p>
 							<p><a href="">Read more</a></p>
 						</div>
 					</article>
-					<article class="grid-item">
+					<article class="grid-item travel">
 						<figure class="item-image">
 							<img src="https://picsum.photos/300/300" alt="" />
 						</figure>
 						<div class="item-copy">
 							<h2 class="secondary-header">Start Creating Today</h2>
-							<div class="item-categories">Creative</div>
+							<div class="item-categories">Travel</div>
 							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni asperiores atque numquam, similique rerum dignissimos unde culpa nemo impedit itaque iste, tempore ut eligendi, temporibus illo delectus voluptas aperiam. Iste.</p>
 							<p><a href="">Read more</a></p>
 						</div>
 					</article>
-					<article class="grid-item">
+					<article class="grid-item ideas design">
 						<figure class="item-image">
 							<img src="https://picsum.photos/300/400" alt="" />
 						</figure>
 						<div class="item-copy">
 							<h2 class="secondary-header">Start Creating Today</h2>
-							<div class="item-categories">Creative</div>
+							<div class="item-categories">Ideas, Design</div>
 							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni asperiores atque numquam, similique rerum dignissimos unde culpa nemo impedit itaque iste, tempore ut eligendi, temporibus illo delectus voluptas aperiam. Iste.</p>
 							<p><a href="">Read more</a></p>
 						</div>
 					</article>
-					<article class="grid-item">
+					<article class="grid-item lifestyle">
 						<figure class="item-image">
 							<img src="https://picsum.photos/300/200" alt="" />
 						</figure>
 						<div class="item-copy">
 							<h2 class="secondary-header">Start Creating Today</h2>
-							<div class="item-categories">Creative</div>
+							<div class="item-categories">Lifestyle</div>
 							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni asperiores atque numquam, similique rerum dignissimos unde culpa nemo impedit itaque iste, tempore ut eligendi, temporibus illo delectus voluptas aperiam. Iste.</p>
 							<p><a href="">Read more</a></p>
 						</div>
 					</article>
-					<article class="grid-item">
+					<article class="grid-item inspiration">
 						<figure class="item-image">
 							<img src="https://picsum.photos/300/200" alt="" />
 						</figure>
 						<div class="item-copy">
 							<h2 class="secondary-header">Start Creating Today</h2>
-							<div class="item-categories">Creative</div>
+							<div class="item-categories">Inspiration</div>
 							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni asperiores atque numquam, similique rerum dignissimos unde culpa nemo impedit itaque iste, tempore ut eligendi, temporibus illo delectus voluptas aperiam. Iste.</p>
 							<p><a href="">Read more</a></p>
 						</div>
 					</article>
-					<article class="grid-item">
+					<article class="grid-item ideas">
 						<figure class="item-image">
 							<img src="https://picsum.photos/300/200" alt="" />
 						</figure>
 						<div class="item-copy">
 							<h2 class="secondary-header">Start Creating Today</h2>
-							<div class="item-categories">Creative</div>
+							<div class="item-categories">Ideas</div>
 							<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni asperiores atque numquam, similique rerum dignissimos unde culpa nemo impedit itaque iste, tempore ut eligendi, temporibus illo delectus voluptas aperiam. Iste.</p>
 							<p><a href="">Read more</a></p>
 						</div>
@@ -189,6 +190,7 @@
 				All rights reserved
 			</div>
 		</footer>
+		<script src="./isotope.js"></script>
 		<script src="./main.js"></script>
 	</body>
 </html>

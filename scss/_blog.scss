@@ -47,18 +47,25 @@
 	}
 }
 
+.grid-sizer,
 .grid-item {
 	.main & {
-		width: calc(33.333% - 1.5rem);
+		width: 32%;
 		box-shadow: 1px 1px 1px 0 rgba($color: #000000, $alpha: 10%);
 
 		@media (max-width: 1024px) {
-			width: calc(50% - 1.5rem);
+			width: 45%;
 		}
 
 		@media (max-width: 600px) {
-			width: auto;
+			width: 91%;
 		}
+	}
+}
+
+.grid-item {
+	.main & {
+		margin-bottom: 10px;
 	}
 }
 

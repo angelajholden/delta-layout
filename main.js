@@ -1,3 +1,35 @@
+window.addEventListener("load", () => {
+	// Initialize Isotope
+	const iso = new Isotope(".grid", {
+		itemSelector: ".grid-item", // Elements to filter
+		layoutMode: "masonry", // You can choose other layouts like masonry
+		// percentPosition: true,
+		masonry: {
+			columnWidth: ".grid-sizer",
+			gutter: 20,
+		},
+	});
+	// Get all filter buttons
+	const filterButtons = document.querySelectorAll(".filters button");
+
+	// Bind filter button clicks
+	filterButtons.forEach((button) => {
+		button.addEventListener("click", (event) => {
+			// Remove 'active' class from all buttons
+			filterButtons.forEach((btn) => btn.classList.remove("active"));
+
+			// Add 'active' class to the clicked button
+			event.target.classList.add("active");
+
+			// Get the filter value from the clicked button
+			const filterValue = event.target.getAttribute("data-filter");
+
+			// Apply Isotope filter
+			iso.arrange({ filter: filterValue });
+		});
+	});
+});
+
 document.addEventListener("DOMContentLoaded", () => {
 	// Get elements
 	const searchButton = document.querySelector(".search-open"); // Search button
