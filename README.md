@@ -23,7 +23,7 @@ _This project is part of a free, open-source series focused on helping newer dev
 
 ## 🔗 See the site live
 
--   [Live demo on Heroku](https://delta-layout-69096c0ff255.herokuapp.com/)
+-   [Live demo on Github Pages](https://angelajholden.github.io/delta-layout/)
 
 ---
 
